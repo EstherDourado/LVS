@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Empresa | LVS Empreiteira e Fábrica de Artefatos de Concreto</title>
+  <meta name="description" content="Conheça a LVS Empreiteira e Fábrica de Artefatos de Concreto em Cascavel/PR. Estrutura fabril própria, frota pesada moderna, diferenciais e engenharia de infraestrutura.">
+  <link rel="canonical" href="https://lvs.ind.br/empresa.html">
+  <link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <style>
+    /* Estilos específicos da página Institucional */
+    .empresa-hero {
+      background: linear-gradient(180deg, var(--color-graphite-deep) 0%, var(--color-graphite) 100%);
+      padding: clamp(3rem, 5vw, 5rem) 0 3rem;
+      color: var(--color-white);
+      border-bottom: 3px solid var(--color-primary);
+    }
+    .empresa-hero-content {
+      max-width: 820px;
+    }
+    .empresa-section {
+      padding: var(--section-padding-y) 0;
+      border-bottom: 1px solid var(--color-bg-subtle);
+    }
+    .empresa-grid-2 {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: clamp(2rem, 4vw, 4rem);
+      align-items: center;
+    }
+    .feature-box {
+      background-color: var(--color-bg-light);
+      border: 1px solid var(--color-concrete-light);
+      border-left: 4px solid var(--color-primary);
+      padding: 1.5rem;
+      border-radius: var(--radius-xs);
+      margin-bottom: 1.25rem;
+    }
+    .feature-box h4 {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--color-graphite);
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+    }
+    .feature-box p {
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+      line-height: 1.55;
+    }
+    .mvv-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    .mvv-card {
+      background: var(--color-white);
+      border: 1px solid var(--color-concrete-light);
+      border-radius: var(--radius-xs);
+      padding: 1.75rem 1.5rem;
+      text-align: left;
+      box-shadow: var(--shadow-sm);
+    }
+    .mvv-card h3 {
+      font-size: 1.1rem;
+      font-weight: 900;
+      color: var(--color-graphite);
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .mvv-card h3::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 18px;
+      background-color: var(--color-primary);
+      border-radius: 2px;
+    }
+    .mvv-card p {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      line-height: 1.6;
+    }
+
+    @media (max-width: 900px) {
+      .empresa-grid-2 {
+        grid-template-columns: 1fr;
+      }
+      .mvv-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cabeçalho Fixo Global (Topbar + Menu de Navegação Permanente) -->
+  <div class="site-header-wrapper" id="site-header-wrapper">
+    <!-- Topbar Informativa -->
+    <div class="topbar">
+      <div class="container">
+        <div class="topbar-info">
+          <div class="topbar-item">
+            <span>Cascavel / PR · Atendimento Regional & Entregas Brasil</span>
+          </div>
+          <div class="topbar-item">
+            <a href="tel:4531979180" style="color: inherit;">(45) 3197-9180</a>
+          </div>
+        </div>
+        <div class="topbar-badge">Frota & Fabricação 100% Própria</div>
+      </div>
+    </div>
+
+    <!-- Cabeçalho Principal Padronizado (Transparência Branca) -->
+    <header class="header" id="header">
+      <div class="container header-container">
+        <a href="index.html" class="brand-logo" aria-label="LVS Empreiteira - Página Inicial">
+          <img src="assets/brand/logo_lvs.png" alt="Logotipo LVS Empreiteira" width="160" height="42">
+        </a>
+
+        <!-- Menu Desktop Padronizado -->
+        <nav class="nav-desktop" aria-label="Navegação Principal">
+          <a href="index.html" class="nav-link">Início</a>
+          <a href="empresa.html" class="nav-link active">A Empresa</a>
+          <a href="produtos.html" class="nav-link">Produtos</a>
+          <a href="index.html#servicos" class="nav-link">Serviços</a>
+          <a href="index.html#galeria" class="nav-link">Obras</a>
+          <a href="index.html#orcamento" class="nav-link">Contato</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="https://wa.me/554531979180?text=Ol%C3%A1%2C+gostaria+de+um+or%C3%A7amento+com+a+LVS." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn btn-primary btn-sm">
+            <span>Solicitar Orçamento</span>
+          </a>
+
+          <button class="mobile-toggle" aria-label="Abrir Menu de Navegação" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Gaveta Mobile Padronizada -->
+  <div class="nav-mobile-overlay"></div>
+  <aside class="nav-mobile" aria-label="Menu Mobile">
+    <div class="nav-mobile-top">
+      <div class="brand-logo" style="margin-bottom: 2rem;">
+        <img src="assets/brand/logo_lvs.png" alt="Logotipo LVS Empreiteira" width="140" height="36">
+      </div>
+      <ul class="nav-mobile-list">
+        <li><a href="index.html" class="nav-mobile-link">Início</a></li>
+        <li><a href="empresa.html" class="nav-mobile-link active" style="color: var(--color-primary);">A Empresa</a></li>
+        <li><a href="produtos.html" class="nav-mobile-link">Produtos de Concreto</a></li>
+        <li><a href="index.html#servicos" class="nav-mobile-link">Serviços</a></li>
+        <li><a href="index.html#galeria" class="nav-mobile-link">Galeria de Obras</a></li>
+        <li><a href="index.html#orcamento" class="nav-mobile-link">Solicitar Orçamento</a></li>
+      </ul>
+    </div>
+    <div class="nav-mobile-footer">
+      <a href="https://wa.me/554531979180" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%; justify-content: center;">
+        <span>Chamar no WhatsApp</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Hero Institucional -->
+  <section class="empresa-hero">
+    <div class="container">
+      <div class="empresa-hero-content">
+        <div class="section-tag section-tag-light">Institucional · Cascavel / PR</div>
+        <h1 class="section-title section-title-white" style="margin-bottom: 0.85rem;">
+          A Força que Constrói a <span class="text-orange">Infraestrutura</span>
+        </h1>
+        <p class="section-subtitle section-subtitle-white">
+          Unimos fabricação própria de artefatos de concreto, frota pesada moderna e consultoria técnica especializada para atender construtoras, loteadoras e o setor público com excelência.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 1: Quem Somos em Detalhes -->
+  <section class="empresa-section">
+    <div class="container">
+      <div class="empresa-grid-2">
+        <div>
+          <div class="section-tag">Nossa História & Atuação</div>
+          <h2 class="section-title">
+            Solidez Operacional com <span class="text-orange">Fabricação Própria</span>
+          </h2>
+          <p style="font-size: 0.95rem; color: var(--color-text-dark); margin-bottom: 1rem; line-height: 1.7;">
+            Fundada em <strong>Cascavel - PR</strong>, a <strong>LVS Empreiteira e Fábrica de Artefatos de Concreto</strong> nasceu para solucionar um dos maiores gargalos da construção civil e da infraestrutura: a dependência de múltiplos fornecedores e os constantes atrasos causados pela terceirização.
+          </p>
+          <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 1.5rem; line-height: 1.7;">
+            Ao integrar sob o mesmo teto a <strong>indústria de artefatos de concreto</strong> (tubos, pavers, meio-fio, caixas e pré-moldados) e a <strong>execução operacional em campo</strong> com frota de máquinas pesadas, a LVS entrega às construtoras uma parceria completa do projeto à entrega da obra.
+          </p>
+
+          <div class="feature-box">
+            <h4>100% de Autonomia Fabril</h4>
+            <p>Controle absoluto sobre o traço, adensamento e cura do concreto, assegurando peças estruturais que superam as exigências das normas técnicas da ABNT.</p>
+          </div>
+
+          <div class="feature-box">
+            <h4>Logística Ágil e Abrangência</h4>
+            <p>Atuação presencial completa em Cascavel e região metropolitana, além de capacidade logística de entrega de artefatos de concreto para todo o território nacional.</p>
+          </div>
+        </div>
+
+        <div>
+          <img src="assets/images/sobre/patio-fabrica.jpg" alt="Pátio fabril e estoque de artefatos da LVS" style="border-radius: var(--radius-sm); box-shadow: var(--shadow-md);" width="520" height="420" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Missão, Visão e Valores -->
+      <div class="mvv-grid">
+        <div class="mvv-card">
+          <h3>Missão</h3>
+          <p>Fornecer soluções completas em infraestrutura e artefatos de concreto com máxima resistência, pontualidade e transparência técnica, gerando economia real para os nossos clientes.</p>
+        </div>
+        <div class="mvv-card">
+          <h3>Visão</h3>
+          <p>Ser a empreiteira e fábrica de referência no Paraná pela robustez operacional, capacidade técnica em obras complexas e excelência na fabricação de produtos de concreto.</p>
+        </div>
+        <div class="mvv-card">
+          <h3>Valores</h3>
+          <p>Segurança operacional rigorosa, respeito aos prazos acordados, qualidade sem concessões nos materiais e compromisso ético com parceiros e clientes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 2: O Que Fazemos (Três Frentes em Detalhes) -->
+  <section class="empresa-section" style="background-color: var(--color-bg-light);" id="o-que-fazemos">
+    <div class="container">
+      <div class="section-header-center">
+        <div class="section-tag">Capacidade Técnica</div>
+        <h2 class="section-title">
+          O Que Fazemos: <span class="text-orange">Três Grandes Frentes</span>
+        </h2>
+        <p class="section-subtitle">
+          Entenda em detalhes como cada divisão da LVS atua com maquinários modernos e equipes preparadas.
+        </p>
+      </div>
+
+      <div class="empresa-grid-2" style="margin-bottom: 3.5rem;">
+        <div>
+          <span style="font-size: 0.75rem; font-weight: 800; color: var(--color-primary); text-transform: uppercase;">Divisão 01</span>
+          <h3 style="font-size: 1.35rem; font-weight: 900; color: var(--color-graphite); margin: 0.35rem 0 0.75rem; text-transform: uppercase;">
+            Infraestrutura Urbana & Rodoviária
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.65; margin-bottom: 1rem;">
+            Execução completa de obras pesadas para implantação de loteamentos residenciais, condomínios fechados, distritos industriais e rodovias:
+          </p>
+          <ul style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem; color: var(--color-text-dark); font-weight: 600;">
+            <li>✓ Redes de drenagem pluvial com tubos de concreto armados e simples;</li>
+            <li>✓ Redes de coleta de esgoto e distribuição de água tratada;</li>
+            <li>✓ Galerias celulares e aduelas de concreto para grandes vazões;</li>
+            <li>✓ Terraplenagem, corte, aterro e compactação com controle de grau;</li>
+            <li>✓ Pavimentação intertravada (pavers) e vias com meio-fio extrusado.</li>
+          </ul>
+        </div>
+        <div>
+          <img src="assets/images/servicos/infraestrutura.jpg" alt="Infraestrutura Urbana e Loteamentos" style="border-radius: var(--radius-xs); box-shadow: var(--shadow-sm);" width="500" height="320" loading="lazy">
+        </div>
+      </div>
+
+      <div class="empresa-grid-2" style="margin-bottom: 3.5rem;">
+        <div>
+          <img src="assets/images/servicos/locacao-maquinas.jpg" alt="Locação de Máquinas e Equipamentos" style="border-radius: var(--radius-xs); box-shadow: var(--shadow-sm);" width="500" height="320" loading="lazy">
+        </div>
+        <div>
+          <span style="font-size: 0.75rem; font-weight: 800; color: var(--color-primary); text-transform: uppercase;">Divisão 02</span>
+          <h3 style="font-size: 1.35rem; font-weight: 900; color: var(--color-graphite); margin: 0.35rem 0 0.75rem; text-transform: uppercase;">
+            Locação de Máquinas e Equipamentos Pesados
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.65; margin-bottom: 1rem;">
+            Disponibilizamos frota pesada moderna para locação mensal, semanal ou por diária com suporte contínuo:
+          </p>
+          <ul style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem; color: var(--color-text-dark); font-weight: 600;">
+            <li>✓ <strong>Escavadeiras Hidráulicas</strong> para escavações pesadas e valas profundas;</li>
+            <li>✓ <strong>Retroescavadeiras</strong> equipadas com rompedores hidráulicos;</li>
+            <li>✓ <strong>Pás Carregadeiras</strong> de alta produtividade;</li>
+            <li>✓ <strong>Caminhões Munck e Caçambas</strong> para transporte e elevação de carga;</li>
+            <li>✓ <strong>Extrusoras de meio-fio</strong> e blindagens metálicas para escoramento de valas;</li>
+            <li>✓ Operadores qualificados com certificações de segurança (NRs).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="empresa-grid-2">
+        <div>
+          <span style="font-size: 0.75rem; font-weight: 800; color: var(--color-primary); text-transform: uppercase;">Divisão 03</span>
+          <h3 style="font-size: 1.35rem; font-weight: 900; color: var(--color-graphite); margin: 0.35rem 0 0.75rem; text-transform: uppercase;">
+            Serviços Especializados de Engenharia
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.65; margin-bottom: 1rem;">
+            Soluções técnicas para desafios geológicos e estruturais complexos:
+          </p>
+          <ul style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem; color: var(--color-text-dark); font-weight: 600;">
+            <li>✓ <strong>Instalação de Caixas Elétricas Subterrâneas</strong> (padrões Delta e RA homologados);</li>
+            <li>✓ Escavação técnica em rocha e terrenos de alta dureza;</li>
+            <li>✓ Rompimento mecânico controlado de concreto armado e demolições técnicas;</li>
+            <li>✓ Valas especiais para redes subterrâneas de telecomunicação e gás.</li>
+          </ul>
+        </div>
+        <div>
+          <img src="assets/images/servicos/servicos-especializados.jpg" alt="Serviços Especializados de Engenharia LVS" style="border-radius: var(--radius-xs); box-shadow: var(--shadow-sm);" width="500" height="320" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 3: Diferenciais Detalhados -->
+  <section class="empresa-section" id="diferenciais">
+    <div class="container">
+      <div class="section-header-center">
+        <div class="section-tag">Por Que Escolher a LVS</div>
+        <h2 class="section-title">
+          Diferenciais que Protegem o Seu <span class="text-orange">Cronograma e Orçamento</span>
+        </h2>
+        <p class="section-subtitle">
+          Saiba por que grandes loteadoras, incorporadoras e concessionárias fecham com a LVS.
+        </p>
+      </div>
+
+      <div class="diferenciais-grid">
+        <div class="diferencial-card">
+          <div class="diferencial-header">
+            <div class="diferencial-icon">01</div>
+            <h3>Fabricação Própria</h3>
+          </div>
+          <p>Preço direto da fábrica, sem custos adicionais de intermediários ou margens de revenda, com peças inspecionadas.</p>
+        </div>
+
+        <div class="diferencial-card">
+          <div class="diferencial-header">
+            <div class="diferencial-icon">02</div>
+            <h3>Frota Própria Sem Terceirização</h3>
+          </div>
+          <p>Todas as máquinas e caminhões pertencem à LVS. Isso garante mobilização rápida e substituição imediata em caso de manutenção.</p>
+        </div>
+
+        <div class="diferencial-card">
+          <div class="diferencial-header">
+            <div class="diferencial-icon">03</div>
+            <h3>Solução Ponta a Ponta</h3>
+          </div>
+          <p>Desde o cálculo dos artefatos e fornecimento até a execução completa da terraplenagem e pavimentação com um único interlocutor.</p>
+        </div>
+
+        <div class="diferencial-card">
+          <div class="diferencial-header">
+            <div class="diferencial-icon">04</div>
+            <h3>Agilidade no Abastecimento</h3>
+          </div>
+          <p>Localização estratégica em Cascavel permitindo fornecimento diário contínuo sem interrupção dos trabalhos no canteiro.</p>
+        </div>
+
+        <div class="diferencial-card">
+          <div class="diferencial-header">
+            <div class="diferencial-icon">05</div>
+            <h3>Consultoria Técnica na Obra</h3>
+          </div>
+          <p>Orientação por técnicos experientes na correta paginação de pavers, dimensionamento de tubos e caixas de passagem.</p>
+        </div>
+
+        <div class="diferencial-card">
+          <div class="diferencial-header">
+            <div class="diferencial-icon">06</div>
+            <h3>Capacidade para Obras Pesadas</h3>
+          </div>
+          <p>Portfólio comprovado de atendimento a loteamentos inteiros, condomínios horizontais e obras públicas de grande porte.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="section-cta-final">
+    <div class="container">
+      <div class="cta-final-content">
+        <h2 class="cta-final-title">Pronto para Construir com a LVS?</h2>
+        <p class="cta-final-desc">
+          Fale diretamente com nossos engenheiros e consultores comerciais para planejar sua obra ou cotar artefatos de concreto.
+        </p>
+        <div class="cta-final-actions">
+          <a href="https://wa.me/554531979180?text=Ol%C3%A1%2C+estou+na+p%C3%A1gina+institucional+da+LVS+e+gostaria+de+um+or%C3%A7amento." 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn btn-dark btn-lg">
+            <span>Chamar no WhatsApp →</span>
+          </a>
+          <a href="produtos.html" class="btn btn-secondary btn-lg">
+            <span>Ver Catálogo de Produtos</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé Padronizado -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/brand/logo_lvs.png" alt="LVS Empreiteira e Fábrica de Artefatos" width="160" height="42">
+          <p>
+            Empreiteira, Locações e Fábrica de Artefatos de Concreto em Cascavel/PR. Atendendo obras de infraestrutura, drenagem e urbanização em toda a região e despachando artefatos para o Brasil inteiro.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <div class="footer-links">
+            <a href="index.html" class="footer-link">Início</a>
+            <a href="empresa.html" class="footer-link" style="color: var(--color-primary); font-weight: 700;">A Empresa</a>
+            <a href="produtos.html" class="footer-link">Catálogo de Produtos</a>
+            <a href="index.html#servicos" class="footer-link">Serviços</a>
+            <a href="index.html#galeria" class="footer-link">Galeria de Obras</a>
+            <a href="index.html#orcamento" class="footer-link">Solicitar Orçamento</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Setores</h4>
+          <div class="footer-links">
+            <a href="produtos.html#setor-tubos" class="footer-link">Tubos de Concreto</a>
+            <a href="produtos.html#setor-pavers" class="footer-link">Paver Intertravado & Pinhão</a>
+            <a href="produtos.html#setor-meio-fio" class="footer-link">Meio-fio Padrão Cascavel</a>
+            <a href="produtos.html#setor-eletrica" class="footer-link">Caixas Elétricas Subterrâneas</a>
+            <a href="produtos.html#setor-pre-moldados" class="footer-link">Barreiras New Jersey</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Atendimento</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            <div>
+              <strong>Telefone Comercial:</strong><br>
+              <a href="tel:4531979180">(45) 3197-9180</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            </svg>
+            <div>
+              <strong>Instagram:</strong><br>
+              <a href="https://www.instagram.com/lvsempreiteiraefabrica/" target="_blank" rel="noopener noreferrer">@lvsempreiteiraefabrica</a>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <div>
+              <strong>Localização:</strong><br>
+              Cascavel / PR — Despachamos para todo o Brasil
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 LVS Empreiteira e Fábrica de Artefatos. Todos os direitos reservados.</p>
+        <p>Cascavel - PR · Força que Constrói</p>
+        <p class="footer-credits">Desenvolvido por <strong>MIVLO</strong></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante de WhatsApp (Apenas Ícone Oficial e Alinhado) -->
+  <a href="https://wa.me/554531979180?text=Ol%C3%A1%2C+estou+na+p%C3%A1gina+institucional+da+LVS+e+gostaria+de+um+or%C3%A7amento."
+    target="_blank" rel="noopener noreferrer" class="whatsapp-floating" aria-label="Falar com a LVS no WhatsApp">
+    <svg viewBox="0 0 448 512" fill="currentColor" aria-hidden="true">
+      <path
+        d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z" />
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

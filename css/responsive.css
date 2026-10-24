@@ -1,0 +1,360 @@
+/* ==========================================================================
+   LVS - Responsive & Mobile-First (Sem quebra de layout)
+   Garantia: Zero rolagem horizontal, alvos de toque >= 44px,
+   textos proporcionais e adaptados a qualquer tela.
+   ========================================================================== */
+
+/* Telas Médias / Tablets (Menor que 1024px) */
+@media (max-width: 1024px) {
+  :root {
+    --header-height: 70px;
+    --topbar-height: 33px;
+    --total-header-height: calc(var(--header-height) + var(--topbar-height));
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .hero-visual {
+    max-width: 520px;
+    margin: 0 auto;
+  }
+  .hero-card-featured img {
+    height: 320px;
+  }
+
+  .trust-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .trust-item:nth-child(2) {
+    border-right: none;
+  }
+
+  .numbers-horizontal-row {
+    gap: 2rem;
+  }
+
+  .diferenciais-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .servico-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.75rem;
+  }
+  .servico-visual img {
+    height: 280px;
+  }
+
+  .galeria-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .galeria-item.span-2 {
+    grid-column: span 1;
+  }
+
+  .orcamento-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* Telas Pequenas / Mobile (Menor que 768px) */
+@media (max-width: 767px) {
+  :root {
+    --header-height: 64px;
+    --topbar-height: 0px;
+    --total-header-height: var(--header-height);
+    --section-padding-y: 3rem;
+    --section-padding-x: 1.15rem;
+  }
+
+  html {
+    font-size: 14px; /* Base reduzida para telas pequenas */
+  }
+
+  .topbar {
+    display: none !important; /* Mantém o topo limpo */
+  }
+
+  .site-header-wrapper.scrolled .header {
+    height: 64px;
+  }
+
+  .brand-logo {
+    height: 36px;
+  }
+  .brand-logo img {
+    height: 32px;
+  }
+
+  .header-actions .btn {
+    display: none;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 2.5rem 0 3.5rem;
+  }
+
+  .hero-location-tag {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.65rem;
+  }
+
+  .hero-headline {
+    font-size: 1.75rem; /* Proporção equilibrada sem gritar */
+    line-height: 1.15;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    width: 100%;
+  }
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.85rem 1.25rem;
+  }
+
+  .hero-contact-inline {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .hero-badge-overlay {
+    bottom: 0.75rem;
+    left: 0.75rem;
+    right: 0.75rem;
+    padding: 0.75rem;
+  }
+
+  .trust-strip {
+    padding: 1rem 0;
+  }
+  .trust-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  .trust-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding-bottom: 0.65rem;
+  }
+  .trust-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  /* Seção Quem Somos (Mobile: 4 valores divididos 2 em cima e 2 embaixo) */
+  .section-quem-somos-highlight {
+    padding: 3rem 0;
+  }
+  .quem-somos-eyebrow img {
+    width: 70px;
+  }
+  .numbers-horizontal-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem 1rem;
+    margin-bottom: 2.25rem;
+    width: 100%;
+    overflow-x: visible;
+    padding: 0 0.5rem;
+  }
+  .numbers-horizontal-row::-webkit-scrollbar {
+    display: none;
+  }
+  .stat-item-inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.65rem;
+    text-align: left;
+    width: 100%;
+    min-width: 0;
+  }
+  .stat-number-big {
+    font-size: clamp(2rem, 7vw, 2.7rem);
+    line-height: 1;
+    font-weight: 300;
+  }
+  .stat-number-big.stat-brasil {
+    font-size: clamp(1.6rem, 5.5vw, 2.2rem);
+    font-weight: 400;
+  }
+  .stat-label-inline {
+    font-size: clamp(0.72rem, 2.4vw, 0.82rem);
+    max-width: 120px;
+    line-height: 1.25;
+  }
+  .quem-somos-lead-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.85rem;
+  }
+
+  .diferenciais-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .servicos-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    width: 100%;
+  }
+  .servicos-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .tab-btn {
+    flex-shrink: 0;
+    font-size: 0.75rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .servico-items-list {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .produtos-filter {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    width: 100%;
+  }
+  .produtos-filter::-webkit-scrollbar {
+    display: none;
+  }
+  .filter-btn {
+    flex-shrink: 0;
+    font-size: 0.74rem;
+    padding: 0.4rem 0.85rem;
+  }
+
+  .produtos-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  /* Catálogo de Produtos: 3 Itens por Linha no Mobile */
+  .catalog-cards-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.45rem !important;
+  }
+
+  .catalog-banner {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+  }
+  .catalog-banner .btn {
+    width: 100%;
+  }
+
+  .ver-mais-categoria-container .btn {
+    width: 100%;
+    white-space: normal;
+    text-align: center;
+    padding: 0.85rem 1rem !important;
+  }
+
+  .galeria-grid {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+  .galeria-item {
+    height: 220px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.6rem;
+  }
+
+  .whatsapp-floating {
+    bottom: max(1.15rem, env(safe-area-inset-bottom));
+    right: 1.15rem;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+  }
+  .whatsapp-floating svg {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+/* Telas Muito Pequenas (< 360px) */
+@media (max-width: 359px) {
+  .hero-headline {
+    font-size: 1.5rem;
+  }
+  .numbers-horizontal-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem 0.5rem;
+  }
+  .stat-number-big {
+    font-size: 1.8rem;
+  }
+  .stat-number-big.stat-brasil {
+    font-size: 1.45rem;
+  }
+  .stat-label-inline {
+    font-size: 0.68rem;
+    max-width: 90px;
+  }
+  .whatsapp-floating {
+    width: 44px;
+    height: 44px;
+  }
+  .whatsapp-floating svg {
+    width: 24px;
+    height: 24px;
+  }
+}
