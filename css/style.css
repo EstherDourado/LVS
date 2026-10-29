@@ -1248,7 +1248,8 @@ header.header:not(.site-header-wrapper header) {
 
 .produtos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 320px));
+  justify-content: center;
   gap: 1.25rem;
   margin-bottom: 2.5rem;
 }
